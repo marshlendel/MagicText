@@ -1,16 +1,57 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, purple, rgba(255, 255, 255, 0));
 }
 
-#magic-text, form {
-    text-align: center;
+main {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#magic-text,
+form {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
 }
 
 #magic-text {
-    margin: 3rem 0;
-    transition: all 0.5s ease;
+  text-shadow: 0 5px 10px black;
+  transition: all 0.5s ease;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+form button,
+input {
+  border: none;
+  background: white;
+  color: purple;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+input {
+  margin-top: 4rem;
+}
+
+form button {
+  background: violet;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+form button:hover {
+  background: rgb(180, 98, 180);
 }
 
 .fade {
-    opacity: 0;
+  opacity: 0;
 }
